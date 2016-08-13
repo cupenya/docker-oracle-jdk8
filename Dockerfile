@@ -35,8 +35,12 @@ RUN \
   apt-get install -y oracle-java8-installer && \
   rm -rf /var/cache/oracle-jdk8-installer
 
-
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+
+
+# Install packages that are too stupid to not have
+RUN apt-get install -y unzip curl
+
 
 # standard clean operations
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
