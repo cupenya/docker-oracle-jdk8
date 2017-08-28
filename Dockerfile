@@ -20,7 +20,7 @@
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 #  THE SOFTWARE.
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Elmar Weber <elmar(.)weber(@)cupenya(.)com>
 
 ENV TERM linux
